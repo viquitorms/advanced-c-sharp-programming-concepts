@@ -25,5 +25,6 @@ Console.WriteLine($"{result.Item1}, {result.Item2}, {result.Item3}");
 // deconstructing the tuple into variables
 
 
+
 // You can also use explicit variable types, and the _ character can be
 // used to ignore any values that you don't plan to use

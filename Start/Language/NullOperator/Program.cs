@@ -23,12 +23,12 @@
 // LogString(null);
 
 // It's also allowable to throw an exception as part of the right-hand expression
-// void ThrowableLogString(string? TheString) {
-//     Console.WriteLine(TheString ?? throw new ArgumentNullException("TheString", "Cannot be null!"));
-// }
+void ThrowableLogString(string? TheString) {
+    Console.WriteLine(TheString ?? throw new ArgumentNullException(nameof(TheString), "Cannot be null!"));
+}
 
-// ThrowableLogString("Test String");
-// ThrowableLogString(null);
+ThrowableLogString("Test String");
+ThrowableLogString(null);
 
 // The ??= assigns a value if the left-hand value is null
 string? Str = "Some other value";
